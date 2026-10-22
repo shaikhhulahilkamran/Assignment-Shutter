@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | SHUTTER Photography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">SHUTTER<span>.</span></a>
+    <nav class="topnav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <section class="contact-heading">
+      <p class="eyebrow">SAY HELLO</p>
+      <h1>Let’s create<br><em>something real.</em></h1>
+      <p>Have a shoot, collaboration, or creative idea in mind? Send a message and tell me a little about it.</p>
+      <div class="contact-details">
+        <div><span class="detail-label">EMAIL</span><a href="mailto:hello@example.com">hello@example.com</a></div>
+        <div><span class="detail-label">PHONE</span><a href="tel:+920000000000">+92 000 0000000</a></div>
+        <div><span class="detail-label">LOCATION</span><span>Karachi, Pakistan</span></div>
+      </div>
+    </section>
+
+    <section class="form-panel">
+      <h2>Send a message</h2>
+      <p class="form-note">Fill in the details below. Your email app will open with your message ready to send.</p>
+      <form action="mailto:hello@example.com" method="post" enctype="text/plain">
+        <label for="name">Your name</label>
+        <input id="name" name="Name" type="text" placeholder="Full name" required>
+        <label for="email">Email address</label>
+        <input id="email" name="Email" type="email" placeholder="you@example.com" required>
+        <label for="subject">What do you need?</label>
+        <select id="subject" name="Project type">
+          <option>Portrait photography</option>
+          <option>Events</option>
+          <option>Product photography</option>
+          <option>Travel & landscape</option>
+          <option>Other collaboration</option>
+        </select>
+        <label for="message">Your message</label>
+        <textarea id="message" name="Message" rows="5" placeholder="Tell me about your idea..." required></textarea>
+        <button class="button" type="submit">Send message <span>↗</span></button>
+      </form>
+      <p class="form-note">Note: This simple HTML form uses your device’s email app. For messages to be sent directly from the website, a backend or form service is needed.</p>
+    </section>
+  </main>
+
+  <footer><a class="brand small-brand" href="index.html">SHUTTER<span>.</span></a><p>Photography portfolio · Made with care</p><a href="index.html">Home ↗</a></footer>
+</body>
+</html>
